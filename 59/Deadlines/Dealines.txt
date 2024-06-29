@@ -1,0 +1,22 @@
+Folder Structure :
+(Suggestion : Write whole explanation (JVM architechture) for at least first two codes)
+ClassAndObjects -> 1. Inhertitance (10)
+		2. Method Overloading (10)
+		3. Method Overriding (10)
+		4. Abstract Class (10)
+		5. Interface (10)
+		6. Normal Inner class (5) (Write whole explanation for at least 3 codes)
+		7. Method Local Inner class(5)
+		8. Static Inner class (5)
+		9. Anonymous Inner class (10)
+
+Deadlines
+19th March -> Inhertitance (extends)
+20th March -> Method Overloading
+21st March -> Method Overriding
+23rd March -> Abstract Classes
+24th March -> Interface
+26th March -> Normal Inner class 
+27th March -> Method Local Inner class and Static Inner class
+28th March -> Anonymous Inner class
+

@@ -1,0 +1,86 @@
+create table students
+(
+	ROLL_NO int,
+	NAME varchar(30),
+	MOB_NO bigint,
+	CITY varchar(30),
+	COLLEGE varchar(30),
+	BRANCH varchar(10),
+	ATTENDANCE_PERCENTAGE double(10,2),
+	RECORD_CREATED_ON datetime,
+	RECORD_UPDATED_ON datetime,
+	RECORD_CREATED_BY varchar(30),
+	RECORD_UPDATED_BY varchar(30),
+	RECORD_STATUS varchar(1)
+);
+============================================================================
+desc students;
+============================================================================
+insert into students values(1,'Sejal',8956235689,'Kolhapur','PCCOE','CSE',93.0,NOW(),null,'Admin',null,'A');
+
+insert into students values(2,'Avanti',7845122356,'Yavatmal','PCCOE','CSE',61.0,NOW(),null,'Admin',null,'A');
+
+insert into students values(3,'Janvi',8856451223,'Yavatmal','VIIT','CSEAI',73.0,NOW(),null,'Admin',null,'A');
+
+insert into students values(5,'Ram',8956235600,'Kolhapur','AISSMS','E&TC',25.0,NOW(),null,'Admin',null,'A');
+
+insert into students values(6,'Shyam',7845100356,'Amravati','MCOE','CIVIL',10.0,NOW(),null,'Admin',null,'A');
+
+insert into students values(7,'Seeta',8888451223,'Pune','MIT','MECH',88.0,NOW(),null,'Admin',null,'A');
+
+============================================================================
+select max(ROLL_NO) from students;
+
+select min(ROLL_NO), max(MOB_NO) from students;
+select max(ROLL_NO), min(ROLL_NO) from students;
+
+select avg(ATTENDANCE_PERCENTAGE) from students;
+
+select count(ROLL_NO) from students;
+
+select sum(ROLL_NO) from students;
+
+============================================================================
+
+Updating Sejal's Roll no. by not deleting the previous record from logging purpose. Will just the update the previous record by doing RECORD_STATUS = 'D'
+
+insert into students values(4,'Sejal',8956235689,'Kolhapur','PCCOE','CSE',93.0,NOW(),null,'Admin',null,'A');
+
+update students
+set RECORD_STATUS = 'D'
+where ROLL_NO = 1;
+
+===============================================================================
+ select * from students where RECORD_STATUS = 'A';
+
+ select * from students order by RECORD_CREATED_ON desc;
+
+================================================================================
+
+select ROLL_NO from students where ATTENDANCE_PERCENTAGE < 75.0;	
+
+================================================================================
+
+ select count(ROLL_NO) from students where city = 'KOLHAPUR' and RECORD_STATUS = 'A';
+
+================================================================================
+
+ select * from students where name like '%a';
+ select * from students where name like 's%';
+ select * from students where name like 'a%i';
+
+ select * from students where name like 's____';
+
+================================================================================
+
+select * from students where CITY in ('Yavatmal', 'Kolhapur');
+select * from students where CITY in ('Yavatmal', 'Kolhapur', 'Amravati');
+
+================================================================================
+
+select * from students where ROLL_NO between 1 and 3;
+
+
+
+
+

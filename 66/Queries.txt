@@ -1,0 +1,13 @@
+create table medicines
+     (
+     SR_NO int,
+     NAME varchar(30),
+     PRICE DOUBLE(10,5),
+    POWER int
+    );
+
+
+
+insert into medicines values(3,'Gelocil',150.12,1);
+insert into medicines values(4,'Paracetomol',15.12,25);
+insert into medicines values(5,'Dolo',10.12,35);

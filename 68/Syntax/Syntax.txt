@@ -1,0 +1,14 @@
+
+Group by:
+
+select column_name, count(column_name) from table group by column_name;
+
+======================================================================
+
+alter
+
+alter table students add MARKS int;
+
+alter table students drop MARKS;
+
+======================================================================

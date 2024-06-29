@@ -1,0 +1,33 @@
+
+create table tableName(
+	columnName1 datatype,
+	columnName1 datatype,
+	...
+);
+
+insert into tableName values (value1, value2, ...);
+
+insert into medicines (COL1,COL2) values(value1, value2);
+
+select * from tableName; -> all data
+select col1,col2 from tableName; -> selective data
+
+ select * from tableName where ColName = value;
+
+ select * from tableName where ColName1 = value and ColName2 > value
+=====================================================
+
+select * from tableName order by ColName asc;
+
+select * from tableName order by ColName desc;
+
+select * from tableName order by ColName;
+
+=====================================================
+
+ delete from tableName where ColName = value;
+
+=====================================================
+
+
+

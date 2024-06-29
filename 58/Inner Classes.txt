@@ -1,0 +1,5 @@
+Inner Classes :
+1. Normal Inner class
+2. Method local inner class
+3. Static Inner class
+4. Anonymous Inner class

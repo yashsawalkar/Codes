@@ -1,0 +1,2 @@
+To describe table structure
+desc tableName;

@@ -1,0 +1,1 @@
+select branch, count(branch) from students group by branch;
